@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Primary Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio of Farhan Maulana Syidiq - Web Developer specializing in web development, responsive design, and modern technologies">
+    <meta name="keywords" content="portfolio, web developer, Web developer, Farhan Maulana Syidiq, javascript, react, node.js">
+    <meta name="author" content="Farhan Maulana Syidiq">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com/">
+    <meta property="og:title" content="Farhan Maulana Syidiq - Web Developer Portfolio">
+    <meta property="og:description" content="Professional portfolio showcasing web development projects and skills">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourwebsite.com/">
+    <meta property="twitter:title" content="Farhan Maulana Syidiq - Web Developer Portfolio">
+    <meta property="twitter:description" content="Professional portfolio showcasing web development projects and skills">
+
+    <!-- Theme Color for Browser -->
+    <meta name="theme-color" content="#3B82F6">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- Existing tags -->
+    <title>MyFolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+    
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white shadow-lg z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-600">MyFolio</h1>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="hover:text-blue-600">Home</a>
+                <a href="#about" class="hover:text-blue-600">About</a>
+                <a href="#projects" class="hover:text-blue-600">Projects</a>
+                <a href="#contact" class="hover:text-blue-600">Contact</a>
+            </div>
+            <button class="md:hidden" id="menu-btn">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600">
+        <div class="text-center text-white">
+            <img src="CipherVoid.webp" alt="Profile" width="200" height="200" class="rounded-full mx-auto mb-6 border-4 border-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Farhan Maulana Syidiq</h1>
+            <p class="text-xl mb-8">Web Developer</p>
+            <div class="flex justify-center space-x-4">
+                <a href="https://github.com/aleaengineer" class="text-3xl hover:text-gray-300"><i class="fab fa-github"></i></a>
+                <a href="https://instagram.com/aleaxl_" class="text-3xl hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/Bangale72_" class="text-3xl hover:text-gray-300"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-4">
+                    <p class="text-gray-600">I'm a passionate developer with expertise in web technologies.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="text-center p-4 bg-gray-100 rounded-lg">
+                            <i class="fas fa-code text-3xl text-blue-600 mb-2"></i>
+                            <h3 class="font-bold">Web Development</h3>
+                        </div>
+                        <div class="text-center p-4 bg-gray-100 rounded-lg">
+                            <i class="fas fa-mobile-alt text-3xl text-blue-600 mb-2"></i>
+                            <h3 class="font-bold">Responsive Design</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="font-bold">Skills</h3>
+                    <div class="space-y-2">
+                        <div class="flex justify-between">
+                            <span>HTML/CSS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-600 h-2 rounded-full" style="width: 90%"></div>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>PHP/MySQL</span>
+                            <span>72%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-600 h-2 rounded-full" style="width: 72%"></div>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Python</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-blue-600 h-2 rounded-full" style="width: 65%"></div>
+                        </div>
+                        <!-- Add more skills similarly -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">My Projects</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Project Card -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="p1.png" alt="Project" class="w-full">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Quick Count System</h3>
+                        <p class="text-gray-600 mb-4">Quick Count Penghitungan Hasil Suara Pilkada Tahun 2024.</p>
+                        <div class="flex space-x-2">
+                            <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">PHP</span>
+                            <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Bootstrap 5</span>
+                            <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">JS</span>
+                            <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">NodeJS</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more project cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Contact Me</h2>
+            <div class="max-w-lg mx-auto">
+                <form class="space-y-4">
+                    <input type="text" placeholder="Name" class="w-full p-2 border rounded">
+                    <input type="email" placeholder="Email" class="w-full p-2 border rounded">
+                    <textarea placeholder="Message" class="w-full p-2 border rounded h-32"></textarea>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2025 MyFolio. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
